@@ -178,6 +178,7 @@ h3 {
 }
 
 .subbutton {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     display: inline-block;
     background-color: var(--primary-color);
     padding: .5em 1em;
