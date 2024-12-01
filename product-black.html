@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <title>Zusammen Tea Shop</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="icon" href="./images/icon.png">
-    <style>
-        body {
-            position: fixed;
-        }
-        .about {
-            margin: 5% 20%;
-            text-align: center;
-        }
-    </style>
 </head>
 <body id="home">
 <div class="navigation">
@@ -24,7 +16,7 @@
         </div>
         <div class="menus">
             <a href="homepage.html" class="navbutton">Home</a>
-            <a href="#about" class="navbutton">About</a>
+            <a href="about.html" class="navbutton">About</a>
             <a href="contact.html" class="navbutton">Contact</a>
         </div>
         <a href="index.html" class="myaccount">
@@ -32,9 +24,30 @@
         </a>
     </a>
 </div>
-<div class="about" id="about">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad alias atque autem deleniti error eveniet fugiat id minus modi molestias necessitatibus, nobis quidem repellat rerum vero vitae? Deserunt dolorem non quae. Amet aperiam consequuntur delectus dicta eligendi est fugiat inventore libero recusandae. Ab accusantium, architecto aspernatur consequuntur in necessitatibus provident reiciendis totam velit. Commodi eius et ex expedita explicabo fugit nulla quos ratione, suscipit voluptatum. Amet atque dicta dolore ducimus eos et facere harum, id illo magnam obcaecati officiis optio quaerat sunt suscipit? Aliquid assumenda incidunt neque nihil repellat vel veniam voluptatibus? Culpa dolores error possimus repudiandae sint temporibus?</p>
+<div class="container">
+    <div class="image">
+        <img src="./images/black-tea.jpg" alt="Black Tea" class="image">
+    </div>
+    <div class="content">
+        <a href="homepage.html" class="backbutton">＜</a>
+        <div class="item">
+            <div class="text">
+                <h4 id="product-name">Black Tea</h4>
+                <p>Rich in antioxidants and may provide health benefits. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, facilis!</p>
+                <label for="price">￥</label>
+                <input type="number" id="price" value="15" readonly style="width: auto; text-align: left">
+            </div>
+            <div class="order-section" style="margin-top: 1em">
+                <div class="order-number">
+                    <button class="subbutton" onclick="decrement()">-</button>
+                    <label for="order-quantity"></label>
+                    <input type="number" id="order-quantity" value="1" min="1" max="10">
+                    <button class="subbutton" onclick="increment()">+</button>
+                </div>
+            </div>
+        </div>
+        <button type="submit" onclick="order()" style="margin-top: auto; width: auto;">Order Now</button>
+    </div>
 </div>
 <br id="contact">
 <div class="footer" id="footer">
@@ -51,15 +64,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dicta eum eveniet exercitationem fuga iste laborum nobis odit, omnis quas quasi quo quod ratione repellat. Accusantium ad, aliquam animi assumenda earum eligendi, in iste libero numquam, placeat qui quibusdam quis quisquam rem reprehenderit similique tempora. Eius laboriosam sit soluta!
     </div>
 </div>
-<script>
-    window.addEventListener("scroll", (event) => {
-        let scroll = this.scrollY;
-        if (scroll > 100) {
-            document.querySelector(".navigation").classList.add("shadow");
-        } else {
-            document.querySelector(".navigation").classList.remove("shadow");
-        }
-    });
-</script>
+<script src="js/main-navbar.js"></script>
+<script src="js/count-price.js"></script>
 </body>
 </html>
