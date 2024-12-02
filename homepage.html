@@ -16,6 +16,9 @@
         </div>
         <div class="menus">
             <a href="#home" class="navbutton">Home</a>
+            <a href="#best" class="navbutton">Best</a>
+            <a href="#taste" class="navbutton">Recommendation</a>
+            <a href="#menu" class="navbutton">Menu</a>
             <a href="about.html" class="navbutton">About</a>
             <a href="contact.html" class="navbutton">Contact</a>
         </div>
@@ -27,6 +30,10 @@
 <div class="content">
     <div class="title" style="margin: 3em">
         <h2>What Would You Like to Drink Today?</h2>
+    </div>
+    <div id="best"></div>
+    <div class="subtitle">
+        <h3>Our Best Sellers</h3>
     </div>
     <div class="lists">
         <div class="product">
@@ -50,6 +57,12 @@
             <p>￥12</p>
             <a href="product-onion.html" class="subbutton">Order Now</a>
         </div>
+    </div>
+    <div id="taste"></div>
+    <div class="subtitle">
+        <h3>Taste You Never Tried Before</h3>
+    </div>
+    <div class="lists">
         <div class="product">
             <img src="./images/jasmine.jpg" alt="Jasmine Tea" class="image">
             <h4>Jasmine Tea</h4>
@@ -86,9 +99,125 @@
             <a href="product-milk.html" class="subbutton">Order Now</a>
         </div>
     </div>
+    <div id="menu"></div>
+    <div class="subtitle" style="text-align: center; margin-bottom: 3em">
+        <h3>Full Menu</h3>
+    </div>
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <th></th>
+            <th>Product Name</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/matcha.jpg" alt="Matcha Tea" class="table-image">
+            </td>
+            <td>Matcha Tea</td>
+            <td>223</td>
+            <td>￥10</td>
+            <td>
+                <a href="product-matcha.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/black-tea.jpg" alt="Black Tea" class="table-image">
+            </td>
+            <td>Black Tea</td>
+            <td>237</td>
+            <td>￥15</td>
+            <td>
+                <a href="product-black.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/onion.png" alt="Onion Tea" class="table-image">
+            </td>
+            <td>Onion Tea</td>
+            <td>201</td>
+            <td>￥12</td>
+            <td>
+                <a href="product-onion.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/jasmine.jpg" alt="Jasmine Tea" class="table-image">
+            </td>
+            <td>Jasmine Tea</td>
+            <td>189</td>
+            <td>￥8</td>
+            <td>
+                <a href="product-jasmine.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/hojicha.jpg" alt="Hojicha" class="table-image">
+            </td>
+            <td>Hojicha</td>
+            <td>198</td>
+            <td>￥11</td>
+            <td>
+                <a href="product-hojicha.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/thai.jpg" alt="Thai Tea" class="table-image">
+            </td>
+            <td>Thai Tea</td>
+            <td>213</td>
+            <td>￥10</td>
+            <td>
+                <a href="product-thai.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/lemon.jpg" alt="Lemon Tea" class="table-image">
+            </td>
+            <td>Lemon Tea</td>
+            <td>210</td>
+            <td>￥9</td>
+            <td>
+                <a href="product-lemon.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./images/milk.jpg" alt="Milk Tea" class="table-image">
+            </td>
+            <td>Milk Tea</td>
+            <td>198</td>
+            <td>￥9</td>
+            <td>
+                <a href="product-milk.html">
+                    <button class="mainbutton">＞</button>
+                </a>
+            </td>
+        </tr>
+    </table>
 </div>
-<br id="contact">
-<div class="footer" id="footer">
+<div class="footer">
     <div class="column">
         <h3>Socials</h3>
         <a href="" class="links">zusammenthecompany@wohoo.com</a>
@@ -96,21 +225,12 @@
         Soekarno Hatta Street 39 <br>
         Lowokwaru, Malang City, <br>
         East Java, Indonesia <br>
-        <a href="" class="links">See on maps &#8599;</a>
+        <a href="https://www.google.com/maps?ll=-7.943568,112.62017&z=20&t=m&hl=en&gl=SG&mapclient=embed&cid=14002736345309626588" class="links">See on maps &#8599;</a>
     </div>
     <div class="column">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis dicta eum eveniet exercitationem fuga iste laborum nobis odit, omnis quas quasi quo quod ratione repellat. Accusantium ad, aliquam animi assumenda earum eligendi, in iste libero numquam, placeat qui quibusdam quis quisquam rem reprehenderit similique tempora. Eius laboriosam sit soluta!
     </div>
 </div>
-<script>
-    window.addEventListener("scroll", (event) => {
-        let scroll = this.scrollY;
-        if (scroll > 100) {
-            document.querySelector(".navigation").classList.add("shadow");
-        } else {
-            document.querySelector(".navigation").classList.remove("shadow");
-        }
-    });
-</script>
+<script src="js/main-navbar.js"></script>
 </body>
 </html>

@@ -9,19 +9,21 @@
 </head>
 <body id="home">
 <div class="navigation">
-    <a href="homepage.html">
+    <a href="index.html">
         <div class="logo">
-            <img src="./images/logo_dark.png" alt="Zusammen Tea Shop" style="width: 4em; margin-right: .5em">
+            <img src="./images/logo_dark.png" alt="Zusammen Tea Shop" style="width: 4em; margin-right: .5em; height: fit-content;">
             Zusammen Tea Shop
         </div>
         <div class="menus">
-            <a href="homepage.html" class="navbutton">Home</a>
-            <a href="about.html" class="navbutton">About</a>
-            <a href="contact.html" class="navbutton">Contact</a>
+            <a href="index.html" class="navbutton">Home</a>
+            <a href="index.html/#content" class="navbutton">Product</a>
+            <a href="index.html/#about" class="navbutton">About</a>
+            <a href="index.html/#footer" class="navbutton">Contact</a>
         </div>
-        <a href="index.html" class="myaccount">
-            <img src="./images/pfp.png" alt="account" class="myaccount">
-        </a>
+        <div class="account">
+            <a href="login.html" class="navbutton">Login</a>
+            <a href="signup.html" class="mainbutton">Sign up</a>
+        </div>
     </a>
 </div>
 <div class="container">
@@ -29,7 +31,7 @@
         <img src="./images/matcha.jpg" alt="Matcha Tea" class="image">
     </div>
     <div class="content">
-        <a href="homepage.html" class="backbutton">＜</a>
+        <a href="index.html" class="backbutton">＜</a>
         <div class="item">
             <div class="text">
                 <h4 id="product-name">Matcha Tea</h4>
@@ -37,19 +39,12 @@
                 <label for="price">￥</label>
                 <input type="number" id="price" value="10" readonly style="width: auto; text-align: left">
             </div>
-            <div class="order-section" style="margin-top: 1em">
-                <div class="order-number">
-                    <button class="subbutton" onclick="decrement()">-</button>
-                    <label for="order-quantity"></label>
-                    <input type="number" id="order-quantity" value="1" min="1" max="10">
-                    <button class="subbutton" onclick="increment()">+</button>
-                </div>
-            </div>
         </div>
-        <button type="submit" onclick="order()" style="margin-top: auto; width: auto;">Order Now</button>
+        <a href="signup.html" style="margin-top: auto; width: auto;">
+            <button type="submit" style="margin-top: auto; width: 100%;">Give it a try!</button>
+        </a>
     </div>
 </div>
 <script src="js/main-navbar.js"></script>
-<script src="js/count-price.js"></script>
 </body>
 </html>
