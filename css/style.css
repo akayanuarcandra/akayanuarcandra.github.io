@@ -134,6 +134,18 @@ h2 {
     }
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: .75em;
+        margin-bottom: 0;
+    }
+}
+
 h3 {
     font-size: 2em;
     font-weight: 700;
