@@ -27,6 +27,14 @@
     text-decoration: none;
 }
 
+html, body {
+    height: 100%;
+}
+
+.page {
+    flex: 1;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -70,6 +78,8 @@ input::-webkit-inner-spin-button {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
     margin: 0;
     line-height: 2em;
     overflow-x: hidden;
@@ -328,10 +338,10 @@ button[type=submit] {
     flex-direction: row;
     justify-content: center;
     width: auto;
-    margin: 0;
     padding: 5% 10%;
     background-color: var(--text-color);
     color: var(--alt-text);
+    margin-top: auto;
 }
 
 .footer .column {
