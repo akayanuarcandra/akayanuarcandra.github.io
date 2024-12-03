@@ -98,6 +98,12 @@ h2 {
     overflow-wrap: break-word;
 }
 
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-block: 0;
+}
+
 @media (max-width: 1500px) {
     h1 {
         font-size: 4em;
@@ -108,6 +114,11 @@ h2 {
         font-size: 2.5em;
         margin-bottom: 0;
     }
+
+    h3 {
+        font-size: 1.75em;
+        margin-block: 0;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -117,8 +128,13 @@ h2 {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2.25em;
         margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-block: 0;
     }
 }
 
@@ -129,27 +145,31 @@ h2 {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.75em;
         margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-block: 0;
     }
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 1em;
+        font-size: 1.5em;
         margin-bottom: 0;
     }
 
     h2 {
-        font-size: .75em;
+        font-size: 1.5em;
         margin-bottom: 0;
     }
-}
 
-h3 {
-    font-size: 2em;
-    font-weight: 700;
-    margin-block: 0;
+    h3 {
+        font-size: 1.25em;
+        margin-block: 0;
+    }
 }
 
 h4 {
@@ -191,6 +211,12 @@ h4 {
 .logo img {
     width: 4em;
     margin-right: .5em;
+}
+
+@media (max-width: 900px) {
+    .logo .text{
+        font-size: 0;
+    }
 }
 
 .menus {
