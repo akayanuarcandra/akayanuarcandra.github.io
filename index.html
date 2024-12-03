@@ -20,9 +20,10 @@
         </a>
         <div class="menus">
             <a href="#home" class="navbutton">Home</a>
-            <a href="#content" class="navbutton">Product</a>
+            <a href="#content" class="navbutton">Store</a>
+            <a href="#product" class="navbutton">Product</a>
             <a href="#about" class="navbutton">About</a>
-            <a href="#footer" class="navbutton">Contact</a>
+            <a href="home-contact.html" class="navbutton">Contact</a>
         </div>
         <div class="account">
             <a href="login.html" class="navbutton">Login</a>
@@ -45,6 +46,16 @@
     </div>
     <br id="content">
     <div class="content">
+        <div class="storefront">
+            <div class="image">
+                <img src="images/store.jpg" alt="Storefront">
+                <div class="storefront_text">
+                    <h2>Our Storefront</h2>
+                    <p>Located in the heart of Malang City, East Java, Indonesia. We offer a wide range of tea products that you can choose from. Come and visit us!</p>
+                </div>
+            </div>
+        </div>
+        <div id="product"></div>
         <div class="title" style="margin: 3em">
             <h2>Our Products</h2>
         </div>
@@ -142,7 +153,7 @@
                 threshold: 0.5
             });
 
-            const productContainers = document.querySelectorAll('.product, .product_dark, .content .title, .background');
+            const productContainers = document.querySelectorAll('.product, .product_dark, .content .title, .background, .storefront');
             productContainers.forEach(container => {
                 observer.observe(container);
             });

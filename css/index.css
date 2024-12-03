@@ -41,6 +41,44 @@
     animation: slide-in 1s forwards;
 }
 
+.storefront {
+    opacity: 0;
+}
+
+.storefront.animate-on-scroll {
+    animation: slide-in 1s forwards;
+}
+
+.storefront {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.storefront .image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+}
+
+.storefront .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+}
+
+.storefront .storefront_text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--alt-text);
+    padding: 5rem;
+    border-radius: 5px;
+}
+
 .content {
     display: flex;
     align-items: center;
