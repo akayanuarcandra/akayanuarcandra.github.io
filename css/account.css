@@ -63,6 +63,10 @@ body {
     color: var(--alt-text);
 }
 
+.form :focus {
+    border: 1px solid var(--primary-color);
+}
+
 .verification-container {
     display: flex;
     align-items: center;
