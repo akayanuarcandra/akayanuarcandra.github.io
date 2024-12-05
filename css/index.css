@@ -40,7 +40,6 @@
 .background.animate-on-scroll {
     animation: slide-in 1s forwards;
 }
-
 .storefront {
     position: relative;
     width: 100%;
@@ -52,14 +51,24 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: var(--text-color);
 }
 
 .storefront .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .5;
+    opacity: 1;
+    z-index: -1;
+}
+
+.storefront .image .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), var(--text-color));
+    opacity: 0.75;
 }
 
 .storefront .storefront-text {
@@ -69,6 +78,8 @@
     color: var(--alt-text);
     padding: 5rem;
     border-radius: 5px;
+    max-width: calc(100% - 40px); /* Ensure text stays within the image */
+    box-sizing: border-box;
 }
 
 .storefront-text {
